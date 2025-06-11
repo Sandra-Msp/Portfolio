@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class>
+    <nav class="n">
+        <a href="portfolio.html"><button>Home</button></a>
+        <a href="about.html"><button>About</button></a>
+        <a href="education.html"><button>Education</button></a>
+        <a href="skill.html"><button>Skill</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+    </nav>
+    <div class="about-container">
+        <h2 class="heading">Skills</h2>
+        <div class="skill-section">
+            <h3>Technical Skills</h3>
+            <ul class="skill-list">
+                <li><b>Programming Languages:</b> Python, C, C++</li>
+                <li><b>Web Development (Basic Frontend):</b> HTML, CSS, JavaScript</li>
+                <li><b>Tools & Technologies:</b> Git, Visual Studio Code</li>
+            </ul>
+        </div>
+
+        <div class="skill-section">
+            <h3>Soft Skills</h3>
+            <ul class="skill-list">
+                <li>Problem Solving</li>
+                <li>Communication</li>
+                <li>Time Management</li>
+                <li>Team Collaboration</li>
+            </ul>
+        </div>
+        <div class="skill-section">
+    <h3>Certificates</h3>
+    <div class="skill-list">
+        <img src="C:\Users\sandr\Downloads\1.png" id="img" alt="Certificate" width="300px" height="250px"><br>
+        <button onclick="prev()">Previous</button>
+        <button onclick="next()">Next</button>
+    </div>
+</div>
+<footer class="footer">
+    <p class="footer">&copy; 2025 Sandra M. All rights reserved.</p>
+</footer></div>
+<script>
+    const image = [
+        "C:/Users/sandr/Downloads/1.png",
+        "C:/Users/sandr/Downloads/2.png",
+        "C:/Users/sandr/Downloads/3.png"
+        
+        
+    ];
+    let index = 0;
+    function showimage() {
+        document.getElementById("img").src = image[index];
+    }
+    function next() {
+        index = (index + 1) % image.length;
+        showimage();
+    }
+    function prev() {
+        index = (index - 1 + image.length) % image.length;
+        showimage();
+    }
+</script>
+</body>
+</html>
+
